@@ -22,6 +22,18 @@ namespace _01_Programming_Paradigms
             T1.ShowProfile();
             T2.ShowProfile();
 
+            List<Teacher> teachers = new List<Teacher>();
+
+            teachers.Add(new Teacher("Jack Junior", "Violin", 2));
+            teachers.Add(new Teacher("Bernardo Mantoni", "Flute", 9));
+            teachers.Add(new Teacher("Clara Garcia", "Triangle", 3));
+
+            foreach (Teacher teacher in teachers)
+            {
+                teacher.ShowProfile();
+                Console.WriteLine();
+            }
+
             Console.ReadKey(); //To prevent the console from closing immediately after the program is run.
         }
     }
