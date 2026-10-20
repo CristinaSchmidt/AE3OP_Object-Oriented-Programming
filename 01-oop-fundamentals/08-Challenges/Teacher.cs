@@ -34,5 +34,12 @@ public class Teacher
         return "Teacher: " + name + ", Subject: " + subject + ", Years of Experience: " + yearsOfExperience;
     }
 
+    public void ShowProfile()
+    {
+        Console.WriteLine($"Teacher: {Name}");
+        Console.WriteLine($"Subject: {Subject}");
+        Console.WriteLine($"Years of experience: {YearsOfExperience}");
+    }
+
 
 }
