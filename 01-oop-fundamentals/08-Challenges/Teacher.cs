@@ -44,9 +44,9 @@ namespace _01_Programming_Paradigms
 
         public Teacher(string name, string subject, int yearsOfExperience)
         {
-            this.name = name;
-            this.subject = subject;
-            this.yearsOfExperience = yearsOfExperience;
+            Name = name;
+            Subject = subject;
+            YearsOfExperience = yearsOfExperience;
         }
 
         public override string ToString()
