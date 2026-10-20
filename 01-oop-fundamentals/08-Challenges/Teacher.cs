@@ -15,19 +15,31 @@ namespace _01_Programming_Paradigms
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))throw new ArgumentException("Name cannot be empty.");
+                name = value;
+            }
         }
 
         public string Subject
         {
             get { return subject; }
-            set { subject = value; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))throw new ArgumentException("Subject cannot be empty.");
+                subject = value;
+            }
         }
 
         public int YearsOfExperience
         {
             get { return yearsOfExperience; }
-            set { yearsOfExperience = value; }
+            set
+            {
+                if (value < 0) throw new ArgumentException("Years of experience cannot be negative.");
+                yearsOfExperience = value;
+            }
         }
 
         public Teacher(string name, string subject, int yearsOfExperience)
